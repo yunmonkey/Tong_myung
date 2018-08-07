@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/layout_2"
+        android:id="@+id/layout_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#ff0004"></RelativeLayout>
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/layout_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#ff00e5"
+        android:layout_above="@+id/layout_4">
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/layout_3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#1500ff"
+        android:layout_below="@+id/layout_1"></RelativeLayout>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/layout_4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#00ff5d"
+        android:layout_toRightOf="@+id/layout_3"></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_5"
+        android:layout_below="@+id/layout_1"
+        android:layout_toLeftOf="@+id/layout_2"
+        android:layout_above="@+id/layout_3"
+        android:layout_toRightOf="@+id/layout_4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#000000"></RelativeLayout>
+
+</RelativeLayout>
